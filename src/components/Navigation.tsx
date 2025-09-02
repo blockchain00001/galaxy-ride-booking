@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Car, Shield, Phone, User, Menu } from "lucide-react";
+import { Car, Shield, Phone, User, Menu, Rocket, MapPin, Settings, HelpCircle } from "lucide-react";
 import { useState } from "react";
 
 const Navigation = () => {
@@ -8,11 +8,12 @@ const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { path: "/", label: "Home", icon: Car },
-    { path: "/booking", label: "Book Ride", icon: Car },
-    { path: "/admin", label: "Admin", icon: Shield },
-    { path: "/support", label: "Support", icon: Phone },
-    { path: "/profile", label: "Profile", icon: User },
+    { path: '/', label: 'Home', icon: Rocket },
+    { path: '/booking', label: 'Book Ride', icon: Car },
+    { path: '/trip-tracking', label: 'Track Trip', icon: MapPin },
+    { path: '/admin', label: 'Admin', icon: Settings },
+    { path: '/support', label: 'Support', icon: HelpCircle },
+    { path: '/profile', label: 'Profile', icon: User }
   ];
 
   return (
@@ -53,6 +54,22 @@ const Navigation = () => {
                 </Link>
               );
             })}
+          </div>
+
+          {/* Auth Buttons */}
+          <div className="hidden md:flex items-center gap-3">
+            <Link 
+              to="/login"
+              className="text-primary hover:text-primary/80 px-4 py-2 font-medium transition-colors"
+            >
+              Sign In
+            </Link>
+            <Link 
+              to="/register"
+              className="bg-cosmic text-primary-foreground hover:animate-cosmic-pulse px-6 py-2 rounded-full font-medium transition-all"
+            >
+              Sign Up
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
