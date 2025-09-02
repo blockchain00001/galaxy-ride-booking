@@ -139,7 +139,7 @@ const Profile = () => {
                     <Label htmlFor="firstName">First Name</Label>
                     <Input
                       id="firstName"
-                      defaultValue="John"
+                      defaultValue=""
                       className="bg-input/50 backdrop-blur-sm border-border"
                     />
                   </div>
@@ -147,7 +147,7 @@ const Profile = () => {
                     <Label htmlFor="lastName">Last Name</Label>
                     <Input
                       id="lastName"
-                      defaultValue="Doe"
+                      defaultValue=""
                       className="bg-input/50 backdrop-blur-sm border-border"
                     />
                   </div>
@@ -157,7 +157,7 @@ const Profile = () => {
                   <Input
                     id="email"
                     type="email"
-                    defaultValue="john.doe@email.com"
+                    defaultValue=""
                     className="bg-input/50 backdrop-blur-sm border-border"
                   />
                 </div>
@@ -165,7 +165,7 @@ const Profile = () => {
                   <Label htmlFor="phone">Phone Number</Label>
                   <Input
                     id="phone"
-                    defaultValue="+44 7700 900123"
+                    defaultValue=""
                     className="bg-input/50 backdrop-blur-sm border-border"
                   />
                 </div>
