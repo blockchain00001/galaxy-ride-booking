@@ -2,41 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Galaxy Ride Booking Design System - Cosmic Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
+    /* Cosmic Background Colors */
+    --background: 230 35% 7%;
+    --foreground: 210 20% 98%;
+    
+    /* Deep Space Card Colors */
+    --card: 230 35% 10%;
+    --card-foreground: 210 20% 95%;
+    
+    /* Popover Cosmic Colors */
+    --popover: 230 35% 9%;
+    --popover-foreground: 210 20% 95%;
+    
+    /* Stellar Primary Colors */
+    --primary: 280 100% 70%;
+    --primary-foreground: 230 35% 7%;
+    
+    /* Nebula Secondary Colors */
+    --secondary: 200 100% 50%;
+    --secondary-foreground: 230 35% 7%;
+    
+    /* Muted Cosmic Colors */
+    --muted: 230 20% 15%;
+    --muted-foreground: 210 15% 65%;
+    
+    /* Accent Galaxy Colors */
+    --accent: 320 100% 60%;
+    --accent-foreground: 230 35% 7%;
+    
+    /* Destructive Warning Colors */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    
+    /* Border and Input Colors */
+    --border: 230 20% 20%;
+    --input: 230 20% 15%;
+    --ring: 280 100% 70%;
+    
+    /* Design System Tokens */
+    --radius: 1rem;
+    
+    /* Custom Galaxy Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(280 100% 70%), hsl(200 100% 50%));
+    --gradient-nebula: linear-gradient(45deg, hsl(320 100% 60%), hsl(280 100% 70%));
+    --gradient-stellar: radial-gradient(circle, hsl(280 100% 70% / 0.2), transparent 70%);
+    
+    /* Animation Variables */
+    --animation-duration: 0.3s;
+    --float-speed: 3s;
+    --twinkle-speed: 2s;
 
     --sidebar-background: 0 0% 98%;
 
